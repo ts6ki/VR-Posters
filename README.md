@@ -2,4 +2,4 @@
 
 VR posters showcase
 
-(View the project here)[]
+(View the project here)[https://tzukii.github.io/Project-157/]
