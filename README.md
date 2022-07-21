@@ -1,4 +1,4 @@
-VR-Posters
+#VR-Posters
 
 VR posters showcase
 
