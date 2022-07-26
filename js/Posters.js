@@ -1,4 +1,4 @@
-AFRAME.registerComponent("comics-posters", {
+AFRAME.registerComponent("posters", {
   init: function () {
     this.postersContainer = this.el;
     this.posters();
@@ -7,20 +7,20 @@ AFRAME.registerComponent("comics-posters", {
   posters: function () {
     const postersRef = [
       {
-        id: "superman",
+        id: "doom",
         url: "./assets/posters/doom.jpg"
       },
       {
-        id: "spiderman",
+        id: "aot",
         url: "./assets/posters/aot.jpg"
       },
 
       {
-        id: "captain-aero",
+        id: "back4blood",
         url: "./assets/posters/back4blood.jpg"
       },
       {
-        id: "outer-space",
+        id: "strangerthings",
         url: "./assets/posters/strangerthings.jpg"
       }
     ];
@@ -33,7 +33,6 @@ AFRAME.registerComponent("comics-posters", {
       const position = { x: posX, y: posY, z: posZ };
       prevoiusXPosition = posX;
 
-      // Border Element
       const borderEl = this.createBorder(position, item.id);
 
       // Poster Element
@@ -55,7 +54,7 @@ AFRAME.registerComponent("comics-posters", {
 
     entityEl.setAttribute("position", position);
     entityEl.setAttribute("material", { color: "#fff" });
-
+    entityEl.setAttribute("cursor-listener", {});
     return entityEl;
   },
   createPoster: function (item) {
